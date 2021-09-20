@@ -1,5 +1,5 @@
 export const getAPOD = async () => {
-  const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}`);
+  const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}&count=20`);
   const data = await errorHandler(response);
   return data;
 }
