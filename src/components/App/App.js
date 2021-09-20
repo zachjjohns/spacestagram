@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from 'react'
 import Header from "../Header/Header";
-import CardContainer from "../CardContainer/CardContainer";
+import Main from "../Main/Main";
 import {getAPOD} from '../../apiCalls';
 
 export default class App extends Component {
@@ -26,7 +26,7 @@ export default class App extends Component {
     return (
     <div className="App">
       <Header />
-      <CardContainer apods={this.state.apods}/>
+      <Main apods={this.state.apods}/>
     </div>
     )
   }

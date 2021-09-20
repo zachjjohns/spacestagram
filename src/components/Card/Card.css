@@ -1,0 +1,41 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  max-height: 40rem;
+  background-color: rgb(136,136,136, .5);
+  border-radius: .25rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.card-media {
+  width: 100%;
+  max-height: 25rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.card-date {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.card-desc {
+  font-size: 16px;
+  overflow-y: scroll;
+  box-sizing: content-box;
+}
+/* ::-webkit-scrollbar {
+    width: 0;
+} */
+
+.btn-div {
+  display: flex;
+  justify-content: space-between;
+}
