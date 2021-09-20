@@ -1,10 +1,11 @@
 import "./Card.css";
 import React from "react";
 
-export default function Card() {
+export default function Card({ title, mediaType, url, date, explanation }) {
   return (
-    <div>
-      <p>I'm a card!</p>
+    <div className="card-container">
+      <span></span>
+      <img alt={title} src={url} />
     </div>
   )
 }

@@ -9,6 +9,7 @@ export default function CardContainer({ apods }) {
         key={apod.date}
         title={apod.title}
         mediaType={apod.media_type}
+        url={apod.url}
         date={apod.date}
         explanation={apod.explanation}
       />
