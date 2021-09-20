@@ -1,0 +1,8 @@
+.card-container {
+  width: 25rem;
+}
+
+.card-media {
+  background-size: cover;
+  width: 100%;
+}
