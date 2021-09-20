@@ -26,7 +26,7 @@ export default class App extends Component {
     return (
     <div className="App">
       <Header />
-      <CardContainer />
+      <CardContainer apods={this.state.apods}/>
     </div>
     )
   }
