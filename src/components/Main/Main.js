@@ -1,8 +1,8 @@
-import "./CardContainer.css";
+import "./Main.css";
 import React from "react";
 import Card from "../Card/Card";
 
-export default function CardContainer({ apods }) {
+export default function Main({ apods }) {
   const cards = apods.map((apod) => {
     return (
       <Card
