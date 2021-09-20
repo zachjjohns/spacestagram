@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  line-height: 3em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.app-name {
+  font-size: 2.5em;
+}
+
+.tagline {
+  margin-right: 1rem;
+  font-weight: 500;
+}
