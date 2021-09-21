@@ -4,16 +4,22 @@ import Card from "../Card/Card";
 
 export default function Main({ apods }) {
   const cards = apods.map((apod) => {
+    if (apod.media_type === "image") {
     return (
       <Card
         key={apod.date}
         title={apod.title}
-        mediaType={apod.media_type}
         url={apod.url}
         date={apod.date}
         explanation={apod.explanation}
       />
-    );
+    )}
+    else {
+      return (
+      <>
+      </>
+      )
+    }
   });
 
   return (
