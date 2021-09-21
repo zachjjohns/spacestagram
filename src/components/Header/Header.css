@@ -5,6 +5,14 @@ header {
   align-items: center;
 }
 
+a {
+  color: #EEEEEE;
+}
+
+a:hover {
+  color: #00EEEE;
+}
+
 .logo-container {
   display: flex;
   margin-left: 1rem;
@@ -20,5 +28,7 @@ header {
 
 .tagline {
   margin-right: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration-color: none;
 }
