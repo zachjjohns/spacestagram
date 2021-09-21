@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Spacestagram
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React app that displays random posts from [NASA's Astonomy Picture of the Day page](https://apod.nasa.gov/apod/astropix.html). Users are able to like and dislike posts and refresh the page if they would like to check out more posts!
 
-## Available Scripts
+## Contributor
+[Zach Johnson](https://github.com/zachjjohns)
 
-In the project directory, you can run:
+## Features
+* Like / Heart Animations thanks to [react-animated-heart](https://www.npmjs.com/package/react-animated-heart)
+* Testing thru [Cypress](https://www.cypress.io/)
+* Loading + Error Handling
+* Mobile Responsiveness
 
-### `yarn start`
+## Tech & Tools Used
+* React
+* HTML/JS/CSS
+* Cypress
+* NPM package: [react-animated-heart](https://www.npmjs.com/package/react-animated-heart)
+* [NASA's APOD API](https://api.nasa.gov/)
+* Adobe XD for Wireframing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Deploy Link
+[Click Here to view the deployed project on GitHub Pages](https://zachjjohns.github.io/spacestagram/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Screen Shots:
 
-### `yarn test`
+### Desktop
+<img width="1419" alt="Screenshot of Spacestagram's Desktop view" src="https://user-images.githubusercontent.com/76700555/134246446-47e69aff-71bd-4341-a577-bb60fa75880f.png">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Mobile
+<img width="396" alt="Screenshot of Spacestagram's Mobile view" src="https://user-images.githubusercontent.com/76700555/134246553-c7e20d2c-cd2c-46c1-b3f4-867bf996e6c0.png">
 
-### `yarn build`
+### Wireframe (created on Adobe XD)
+![Screen Shot of Spacestagram Wireframe](https://user-images.githubusercontent.com/76700555/134247109-ca2e612e-d9ac-4cb1-9f48-95bced443ae9.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cypress Tests
+![Screen Shot showing Cypress tests passing](https://user-images.githubusercontent.com/76700555/134247218-effcbb86-b07e-4b4b-90e7-549d45b4e2ee.png)
+* If you're interested in running these Cypress tests locally, please [email me](mailto:zachjjohns@gmail.com) as you'll need an API key to do so.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Decisions and Trade Offs
+* This was initially done as a take-home challenge for Shopify's Front End internship program, and it was important to weigh what was realistic to accomplish under a time crunch. I decided to focus on solid preparation & documentation, implementing Cypress for testing, and a clean UI, as I felt these highlighted some of my strengths.
+* I started the project by creating a wireframe and project board (via GitHub Projects), as these are always extremely helpful in making my overall process smoother & more streamlined.
+* The heart animation seemed like a fun feature to implement and I did so via a pre-built npm package. This had its own pros and cons: while I saved time in creating the animation itself, it proved more difficult to tweak colors and position to my liking.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Implementations
+* Utilizing localStorage & React Router to display Liked Posts after the user leaves or refreshes
+* Instead of scroll boxes for each post description, creating a "Show More" button to display the entire description & push remaining content down
+* Loading Animations
+* Date-picker to select a date range of posts, as opposed to random posts
+* A button to create shareable links for each post
