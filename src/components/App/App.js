@@ -17,7 +17,10 @@ export default class App extends Component {
   componentDidMount = async () => {
     try {
       const apods = await getAPOD();
-      this.setState({ apods: apods, isLoading: false });
+      this.setState({
+        apods: apods.filter((apod) => apod.media_type === "image"),
+        isLoading: false,
+      });
     } catch (e) {
       this.setState({
         error: "Oops! Failed to get NASA/APOD data.",

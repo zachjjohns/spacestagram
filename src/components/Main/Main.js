@@ -4,7 +4,6 @@ import Card from "../Card/Card";
 
 export default function Main({ apods }) {
   const cards = apods.map((apod) => {
-    if (apod.media_type === "image") {
     return (
       <Card
         key={apod.date}
@@ -13,18 +12,8 @@ export default function Main({ apods }) {
         date={apod.date}
         explanation={apod.explanation}
       />
-    )}
-    else {
-      return (
-      <>
-      </>
-      )
-    }
+    );
   });
 
-  return (
-    <main>
-      {cards}
-    </main>
-  );
+  return <main>{cards}</main>;
 }
