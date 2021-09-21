@@ -3,10 +3,11 @@
   flex-direction: column;
   width: 25rem;
   max-height: 40rem;
-  background-color: rgb(136,136,136, .5);
-  border-radius: .25rem;
+  background-color: rgb(136, 136, 136, 0.5);
+  border-radius: 0.5rem;
   padding: 1rem;
   margin: 1rem;
+  position: relative;
 }
 
 .card-media {
@@ -34,5 +35,14 @@
 
 .btn-div {
   position: absolute;
+  top: 0;
+  right: 0;
   max-height: 75px;
+}
+
+/* Targets the grey Heart from custom NPM package */
+.go4268192979 {
+  opacity: 0.7;
+  -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 white);
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 white);
 }

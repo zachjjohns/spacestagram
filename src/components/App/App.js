@@ -19,7 +19,10 @@ export default class App extends Component {
       const apods = await getAPOD();
       this.setState({ apods: apods, isLoading: false });
     } catch (e) {
-      this.setState({ error: "Oops! Failed to get NASA/APOD data.", isLoading: false });
+      this.setState({
+        error: "Oops! Failed to get NASA/APOD data.",
+        isLoading: false,
+      });
     }
   };
 
