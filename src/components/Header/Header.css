@@ -55,5 +55,8 @@ a:hover {
     font-size: 16px;
   }
 
-  a:before { content: ' '; display: block; }
+  a:before {
+    content: " ";
+    display: block;
+  }
 }
