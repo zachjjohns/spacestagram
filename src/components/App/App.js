@@ -19,7 +19,7 @@ export default class App extends Component {
       const apods = await getAPOD();
       this.setState({ apods: apods, isLoading: false });
     } catch (e) {
-      this.setState({ error: "Oops! Failed to get NASA/APOD data." });
+      this.setState({ error: "Oops! Failed to get NASA/APOD data.", isLoading: false });
     }
   };
 
@@ -28,6 +28,7 @@ export default class App extends Component {
       <div className="App">
         <Header />
         {this.state.isLoading && <h2 className="load-msg">Loading...</h2>}
+        {this.state.error && <h2 className="error-msg">{this.state.error}</h2>}
         <Main apods={this.state.apods} />
       </div>
     );
